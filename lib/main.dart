@@ -11,6 +11,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int number = 0;
+  int reset = 0;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -35,7 +36,7 @@ class _MyAppState extends State<MyApp> {
                 child: Text('Reset'),
                 onPressed: () {
                   setState(() {
-                    number;
+                    number = reset;
                   });
                 },
               )
